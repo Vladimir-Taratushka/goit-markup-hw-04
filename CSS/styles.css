@@ -317,15 +317,16 @@ main {
 .clients-tag :not(:last-child) {
   margin-right: 30px;
 }
-
-button {
+.clients-tag a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   width: 170px;
   height: 90px;
-  border-color: #afb1b8;
-  border: solid, 1px;
+  border: solid 2px #afb1b8;
   border-radius: 3px;
   background-color: #ffffff;
-  padding: 0;
 }
 .logo1 {
   width: 44px;
@@ -357,13 +358,13 @@ button {
   height: 45px;
   fill: #afb1b8;
 }
-.clients-tag :hover {
+.clients-tag li :hover {
   border-color: #2196f3;
   fill: #2196f3;
 }
 .clients-tag button :focus {
-  border-color: #2196f3;
   fill: #2196f3;
+  border-color: #2196f3;
 }
 /* footer*/
 footer {
