@@ -87,6 +87,13 @@ header {
 .nav-links :hover {
   color: #2196f3;
 }
+.nav-contacts :focus {
+  fill: #2196f3;
+  color: #2196f3;
+}
+.nav-links :focus {
+  color: #2196f3;
+}
 /*Эфективные решения и кнопка заказать услугу*/
 main {
   margin: auto;
@@ -218,21 +225,18 @@ main {
   text-align: center;
   font-size: 36px;
   margin-block-start: 0px;
-  margin-block-end: 50px;
+  margin-block-end: px;
 }
 .team-photo {
   display: flex;
   justify-content: center;
-
+  align-items: center;
   padding-bottom: 94px;
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  margin-block-start: 0px;
+  margin-top: 50px;
   margin-block-end: 0px;
-}
-.team-photo :not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-photo img {
@@ -243,19 +247,27 @@ main {
   width: 270px;
   height: 428px;
   background-color: #ffffff;
+  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-photo figcaption {
+.team-photo :nth-child(4) {
+  margin-right: 0px;
+}
+.name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 0px;
 }
-.team-photo p {
+.occupation {
   text-align: center;
   width: 270px;
   color: #757575;
@@ -269,7 +281,8 @@ main {
   box-sizing: border-box;
   width: 206px;
   height: 44px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .link {
@@ -282,7 +295,7 @@ main {
   align-items: center;
 }
 
-.link-icon:not(:last-child) {
+.link-list:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -291,14 +304,27 @@ main {
   width: 20px;
   height: 20px;
 }
-.link-icon :hover {
+.link-list :hover {
+  background-color: #2196f3;
+}
+.social-icon :hover {
+  fill: #ffffff;
+}
+.link-list :hover .social-icon {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.link-icon :focus {
+.link-list :focus {
+  background-color: #2196f3;
+}
+.social-icon :focus {
+  fill: #ffffff;
+}
+.link-list :focus .social-icon {
   background-color: #2196f3;
   fill: #ffffff;
 }
+
 /* Постоянные клиенты */
 .clients {
   width: 1170px;
@@ -317,7 +343,7 @@ main {
 .clients-tag :not(:last-child) {
   margin-right: 30px;
 }
-.clients-tag a {
+.company-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,13 +384,45 @@ main {
   height: 45px;
   fill: #afb1b8;
 }
-.clients-tag li :hover {
+.clients-tag a:hover {
   border-color: #2196f3;
+}
+.clients-tag .logo1 :hover,
+.clients-tag .logo2 :hover,
+.clients-tag .logo3 :hover,
+.clients-tag .logo4 :hover,
+.clients-tag .logo5 :hover,
+.clients-tag .logo6 :hover {
   fill: #2196f3;
 }
-.clients-tag button :focus {
+
+.clients-tag a:hover .logo1,
+.clients-tag a:hover .logo2,
+.clients-tag a:hover .logo3,
+.clients-tag a:hover .logo4,
+.clients-tag a:hover .logo5,
+.clients-tag a:hover .logo6 {
   fill: #2196f3;
+}
+.clients-tag a:focus {
   border-color: #2196f3;
+}
+.clients-tag .logo1 :focus,
+.clients-tag .logo2 :focus,
+.clients-tag .logo3 :focus,
+.clients-tag .logo4 :focus,
+.clients-tag .logo5 :focus,
+.clients-tag .logo6 :focus {
+  fill: #2196f3;
+}
+
+.clients-tag a:focus .logo1,
+.clients-tag a:focus .logo2,
+.clients-tag a:focus .logo3,
+.clients-tag a:focus .logo4,
+.clients-tag a:focus .logo5,
+.clients-tag a:focus .logo6 {
+  fill: #2196f3;
 }
 /* footer*/
 footer {
@@ -438,6 +496,9 @@ footer {
   height: 20px;
 }
 .our-link-icon :hover {
+  background-color: #2196f3;
+}
+.our-link-icon :focus {
   background-color: #2196f3;
 }
 
