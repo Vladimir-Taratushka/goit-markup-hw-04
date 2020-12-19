@@ -99,8 +99,6 @@ header {
 main {
   margin: auto;
   font-family: "Roboto", sans-serif;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .efective-solution {
   text-align: center;
@@ -118,7 +116,7 @@ main {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  height: 600px;
+  padding-bottom: 200px;
 }
 
 .efective-solution > h1 {
@@ -611,7 +609,7 @@ footer {
   border-radius: 4px;
 }
 /*potfolio photo*/
-.container {
+.container-portfolio {
   justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
